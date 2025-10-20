@@ -42,9 +42,21 @@ function randomInteger (min, max) {
 for(let i=0; i<teams.length; i++) {
     teams[i].points = randomInteger(1,50)
     teams[i].fouls = randomInteger(1,20)
+    
 }
 
 //creo nuovo array di oggetti
 const names_fouls = []
+
+for(i=0; i<teams.length; i++) {
+
+    const newObject = {}
+    newObject.name = teams[i].name
+    newObject.fouls = teams[i].fouls
+
+    names_fouls.push(newObject)
+}
+console.log(teams);
+console.log(names_fouls);
 
 
