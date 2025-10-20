@@ -33,8 +33,18 @@ const teams = [
     }
 ]
 
-//creo la funzione per generare i numeri random per punti e falli
+//creo la funzione per generare numeri interi casuali 
 function randomInteger (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min
 }
+
+//ciclo per assegnare numeri random a punti e falli
+for(let i=0; i<teams.length; i++) {
+    teams[i].points = randomInteger(1,50)
+    teams[i].fouls = randomInteger(1,20)
+}
+
+//creo nuovo array di oggetti
+const names_fouls = []
+
 
