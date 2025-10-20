@@ -33,3 +33,8 @@ const teams = [
     }
 ]
 
+//creo la funzione per generare i numeri random per punti e falli
+function randomInteger (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
